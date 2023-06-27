@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscribe My to blogs</title>
+  <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
+  <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900,300);
+    @import url(http://weloveiconfonts.com/api/?family=fontawesome);
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Lato', sans-serif;
+      color: rgba(0, 0, 0, 0.7);
+      background: #6D6475;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background: linear-gradient(to bottom, #0A1A29, #6D6475, #C69E92);
+      margin: 0;
+    }
+    h2 {
+      text-align: center;
+      font-weight: normal;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1em;
+      white-space: nowrap;
+      font-size: 4vw;
+      z-index: 1000;
+      font-family: 'Titillium Web', sans-serif;
+      text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.7);
+      @include skew(0, -6.7deg, false);
+      @include transition-property(font-size);
+      @include transition-duration(0.5s);
+    }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container .body_txt {
+      flex-basis: 60%;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    body {
+      background: rgb(139, 53, 72);
+      font-family: 'Titillium Web', sans-serif;
+    }
+    h3 {
+      text-align: center;
+      font-weight: normal;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1em;
+      white-space: nowrap;
+      font-size: 2vw;
+      z-index: 1000;
+      font-family: 'Titillium Web', sans-serif;
+      text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.7);
+      @include skew(0, -6.7deg, false);
+      @include transition-property(font-size);
+      @include transition-duration(0.5s);
+    }
+    .container {
+      margin: 150px auto;
+      width: 48vw;
+      height: 300px;
+      background: rgb(255, 255, 255);
+      display: flex;
+      padding: 10px;
+      border-radius: 0.5em;
+      overflow: hidden;
+    }
+    .body_txt hi {
+      font-size: 1.9vw;
+      line-height: 3vw;
+    }
+    .body_txt p {
+      margin: 18px 0;
+    }
+    h1 {
+      text-align: center;
+      font-weight: normal;
+      color: rgb(255, 0, 55);
+      text-transform: uppercase;
+      font-size: 2em;
+      white-space: nowrap;
+      font-size: 1.5vw;
+      z-index: 1000;
+      font-family: 'Titillium Web', sans-serif;
+      @include skew(0, -6.7deg, false);
+      @include transition-property(font-size);
+      @include transition-duration(0.5s);
+    }
+    .inps input[type="email"] {
+      background: rgb(251 251 251);
+      border: 2px solid rgb(150, 150, 150);
+      outline: none;
+      width: 80%;
+      padding: 8px;
+      font-family: Arial;
+      font-size: 15px;
+      height: 24px;
+      border-radius: 0.2rem;
+      transition: 0.12s;
+    }
+    .container .img {
+      flex-basis: 40%;
+      display: grid;
+      place-items: center;
+    }
+    .container .img img {
+      width: 100%;
+      height: auto;
+    }
+    .inps input[type="email"]:focus {
+      border: 2px solid #ff0037;
+      cursor: pointer;
+    }
+    .inps button {
+      width: 85%;
+      height: 39px;
+      padding: 6px;
+      margin-top: 15px;
+      background: #ff0037;
+      color: #fff;
+      border: 1px solid #ff0037;
+      outline: 0;
+      font-family: roboto;
+      font-size: 15px;
+      border-radius: 0.4em;
+      cursor: pointer;
+      transition: 0.2s all;
+      user-select: none;
+    }
+    .inps button:hover {
+      background: #ffffff;
+      color: #ff0037;
+      border: 2px solid #ff0037;
+    }
+    .inps button:active {
+      background: #ffffff;
+      color: #ff0037;
+      border: 2px solid #ff0037;
+    }
+    @media screen and (max-width: 870px) {
+      .container {
+        width: 80vw;
+        height: auto;
+        background: rgb(255, 255, 255);
+        padding: 10px;
+        display: block;
+      }
+      .container .img {
+        height: 150px;
+        background: url("/img_on_mobile.png");
+        object-fit: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .container .img img {
+        display: none;
+      }
+      container .body_txt h1 {
+        font-size: 1.5em;
+        line-height: 25px;
+        margin: 5px 0;
+      }
+      .container .inps button {
+        width: 88%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h3>Subscribe To My Blogs</h3>
+  <div class="container">
+    <div class="img">
+      <img src="2.png" alt="">
+    </div>
+    <div class="body_txt">
+      <h1>Subscribe to our<br>Blogs!</h1>
+      <p>We'll send you the best of our blog just once a month. We promise.</p>
+      <div class="inps">
+        <form id="emailForm">
+          <input type="email" name="email" id="emailInput" placeholder="Enter e-mail"><br>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+    const emailForm = document.getElementById('emailForm');
+    const emailInput = document.getElementById('emailInput');
+
+    emailForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const email = emailInput.value;
+      if (email.trim() !== '') {
+        alert('Email submitted successfully');
+        emailInput.value = '';
+      }
+    });
+  </script>
+</body>
+</html>
