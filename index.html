@@ -28,6 +28,11 @@ s0.parentNode.insertBefore(s1,s0);
 </script>
 <!--End of Tawk.to Script-->
   <body>
+    <!--loader-->
+    <div id="loading-bar"></div>
+    <div id="content">
+
+
     <main>
       <header id="header">
         <div class="overlay overlay-lg">
@@ -54,7 +59,7 @@ s0.parentNode.insertBefore(s1,s0);
         <nav>
           <div class="container">
             <div class="logo">
-              <img src="logo.png" alt="logo" />
+              <img src="img/blogbtech.png" alt="logo" />
               
             </div>
 
@@ -68,7 +73,7 @@ s0.parentNode.insertBefore(s1,s0);
                   <a href="quotation.html" class="active">Get a Quotation</a>
                 </li>
                 <li>
-                  <a href="#portfolio"class="active">Portfolio</a>
+                  <a href="B+Tech/index.html"class="active">Blogs</a>
                 </li>
                 <li>
                   <a href="https://geniusaibio.netlify.app/"class="active">Aboutus</a>
@@ -108,6 +113,8 @@ s0.parentNode.insertBefore(s1,s0);
       
               </a>
             </div>
+
+            
 
             <div class="column-2 image">
               <img
@@ -245,7 +252,9 @@ s0.parentNode.insertBefore(s1,s0);
           </div>
         </div>
       </section>
+      
 <!--........................PORTFOLIO..................................-->
+<!--
       <section class="portfolio section" id="portfolio">
         <div class="background-bg">
           <div class="overlay overlay-sm">
@@ -289,6 +298,36 @@ s0.parentNode.insertBefore(s1,s0);
               </button>
             </div>
 
+
+
+            <div class="grid-item appdev ui">
+              <a href="tourly-master/index.html" target="_blank">
+              <div class="gallery-image">
+                <img src="./img/tourly.png" alt="" />
+                <div class="img-overlay">
+                  <div class="plus"></div>
+                  <div class="img-description">
+                    <h5>Tourly App</h5>
+                     <h3>View Demo</h3></a>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="grid-item webdev">
+              <div class="gallery-image">
+                <img src="./img/project2.jpg" alt="" />
+                <div class="img-overlay">
+                  <div class="plus"></div>
+                  <div class="img-description">
+                    <h5>Ecommerce website</h5>
+                    <a href="https://github.com/oyuko-bruno" target="_blank"> <h3>View Demo</h3></a>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="grid">
               <div class="grid-item logo-design">
                 <div class="gallery-image">
@@ -303,18 +342,7 @@ s0.parentNode.insertBefore(s1,s0);
                   </div>
                 </div>
               </div>
-              <div class="grid-item webdev">
-                <div class="gallery-image">
-                  <img src="./img/project2.jpg" alt="" />
-                  <div class="img-overlay">
-                    <div class="plus"></div>
-                    <div class="img-description">
-                      <h5>Ecommerce website</h5>
-                      <a href="https://github.com/oyuko-bruno" target="_blank"> <h3>View Demo</h3></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            
               <!----
               <div class="grid-item ui webdev">
                 <div class="gallery-image">
@@ -381,7 +409,7 @@ s0.parentNode.insertBefore(s1,s0);
                   </div>
                 </div>
               </div>
-              -->
+              --
               <div class="grid-item appdev ui">
                 <a href="tourly-master/index.html" target="_blank">
                 <div class="gallery-image">
@@ -411,13 +439,130 @@ s0.parentNode.insertBefore(s1,s0);
                 </div>
               </div>
             </div>
-            -->
+          
             <div class="more-folio">
               <a href="#" class="btn">More Folio</a>
             </div>
           </div>
         </div>
       </section>
+    -->
+
+ <!-- project section -->
+ <div class="project-section">
+  <h2 style="color: brown;">Projects</h2>
+  <div class="project-slider">
+    <div class="project-card">
+      <img src="img/tourly.png" alt="Project 1">
+      <div class="project-info">
+        <h3>Epic Escape</h3>
+        <p>Our website showcases a stunning collection of destinations and experiences that await you.</p>
+        <a href="tourly-master/index.html" target="_blank">View Live</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="img/ecommerce.jpg" alt="Project 2">
+      <div class="project-info">
+        <h3>Ecommerce</h3>
+        <p>Easy shopping with desiarble features in one site.</p>
+        <a href="https://github.com/oyuko-bruno" target="_blank">View Live</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="img/map.png" alt="Project 3">
+      <div class="project-info">
+        <h3>School website</h3>
+        <p> Launched Soon...</p>
+        <a href="" target="_blank">View Live</a>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+.project-section {
+text-align: center;
+}
+
+.project-slider {
+display: flex;
+overflow-x: auto;
+scroll-snap-type: x mandatory;
+padding: 20px;
+}
+
+.project-card {
+flex: 0 0 auto;
+width: 300px;
+margin-right: 20px;
+scroll-snap-align: start;
+}
+
+.project-card img {
+width: 100%;
+height: auto;
+margin-bottom: 10px;
+}
+
+.project-info {
+background-color: #f2f2f2;
+padding: 10px;
+}
+
+.project-info h3 {
+margin: 0;
+}
+
+.project-info p {
+margin: 10px 0;
+}
+
+.project-info a {
+display: block;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+.project-card {
+width: 250px;
+}
+}
+
+@media screen and (max-width: 480px) {
+.project-card {
+width: 100%;
+margin-right: 0;
+}
+}
+
+/* Responsive adjustments for Android phones */
+@media screen and (max-width: 480px) and (max-height: 800px) {
+.project-card {
+width: 100%;
+margin-right: 0;
+}
+}
+
+@media screen and (max-width: 360px) and (max-height: 640px) {
+.project-card {
+width: 90%;
+margin-right: 0;
+}
+}
+
+
+</style> 
+<script>
+// Optional: Add JavaScript to enable smooth scrolling
+const projectSlider = document.querySelector('.project-slider');
+projectSlider.addEventListener('wheel', (event) => {
+event.preventDefault();
+projectSlider.scrollLeft += event.deltaY;
+});
+
+</script>   
+<!--END OF PORTFOLIO-->
+
+
 
 
 <!--
@@ -927,12 +1072,215 @@ s0.parentNode.insertBefore(s1,s0);
 
 
       <section class="hireme" id="hireme">
+
         <div class="container">
+
+          <main>
+
+            <h1 class="faq-heading">FAQ'S</h1>
+            <section class="faq-container">
+                <div class="faq-one">
+    
+                    <!-- faq question -->
+                    <h1 class="faq-page">What is B+plus Tech?</h1>
+    
+                    <!-- faq answer -->
+                    <div class="faq-body">
+                        <p>Introducing B+plus Tech, a dynamic and innovative IT firm specializing in delivering 
+                          comprehensive technology solutions for businesses of all sizes. 
+                   </p>
+                    </div>
+                </div>
+                <hr class="hr-line">
+    
+                <div class="faq-two">
+    
+                    <!-- faq question -->
+                    <h1 class="faq-page">What services does your IT company offer?</h1>
+    
+                    <!-- faq answer -->
+    
+                    <div class="faq-body">
+                        <p>B+plus tech company offers a wide range of services including network infrastructure setup, software development, cloud solutions,
+                             cybersecurity, IT consulting, and IT support.</p>
+                    </div>
+                </div>
+                <hr class="hr-line">
+    
+    
+                <div class="faq-three">
+    
+                    <!-- faq question -->
+    <h1 class="faq-page">Can you provide examples of past IT projects you have completed?</h1>
+    
+                    <!-- faq answer -->
+                    <div class="faq-body">
+                        <p>Absolutely! You can find a showcase of our past IT projects, along with case studies, on our portfolio page. These examples will give you a 
+                            better understanding of our capabilities and expertise.!</p>
+                    </div>
+                </div>
+                <hr class="hr-line">
+    
+    
+                <div class="faq-three">
+    
+                    <!-- faq question -->
+    <h1 class="faq-page">What is your pricing structure for IT services?</h1>
+    
+                    <!-- faq answer -->
+                    <div class="faq-body">
+                        <p>Our pricing structure varies based on the specific services required. We offer both project-based pricing and flexible retainer options. Contact us
+                             for a detailed quote based on your specific needs.!</p>
+                    </div>
+                </div>
+                <hr class="hr-line">
+    
+    
+                <div class="faq-three">
+    
+                    <!-- faq question -->
+    <h1 class="faq-page">How do you ensure the security and confidentiality of client data?</h1>
+    
+                    <!-- faq answer -->
+                    <div class="faq-body">
+                        <p>We take data security and confidentiality seriously. Our team follows industry best practices and implements robust security measures to protect client data. We adhere to strict privacy policies 
+                            and comply with relevant data protection regulations.!</p>
+                    </div>
+                </div>
+                <hr class="hr-line">
+    
+    
+                <div class="faq-three">
+    
+                    <!-- faq question -->
+    <h1 class="faq-page">What is your approach to handling IT emergencies or technical issues?</h1>
+    
+                    <!-- faq answer -->
+                    <div class="faq-body">
+                        <p>At B+plus Tech, we understand the critical nature of IT emergencies and the importance of resolving technical issues promptly. Our approach to handling IT emergencies is focused on swift response, 
+                            effective troubleshooting, and proactive resolution</p>
+                    </div>
+                </div>
+                <hr class="hr-line">
+    
+    
+                <div class="faq-three">
+    
+                    <!-- faq question -->
+    <h1 class="faq-page">Do you offer ongoing IT support and maintenance?</h1>
+    
+                    <!-- faq answer -->
+                    <div class="faq-body">
+                        <p>Yes, we provide ongoing IT support and maintenance services to ensure the smooth operation of your systems. Our support plans include monitoring, troubleshooting,
+                             regular updates, and proactive maintenance.</p>
+                    </div>
+                </div>
+    
+            </section>
+        </main>
+        <script src="main.js"></script>
+    </body>
+    <style>
+    body{
+        font-family: 'Work Sans', sans-serif;
+    }
+    h1{
+        font-size: 15px;
+    }
+    .faq-heading{
+        border-bottom: #777;
+        padding: 20px 60px;
+    }
+    .faq-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    }
+    .hr-line{
+      width: 60%;
+      margin: auto;
+      
+    }
+    /* Style the buttons that are used to open and close the faq-page body */
+    .faq-page {
+        /* background-color: #eee; */
+        color: #444;
+        cursor: pointer;
+        padding: 30px 20px;
+        width: 60%;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        margin: auto;
+        color: brown;
+    
+    }
+    .faq-body{
+        margin: auto;
+        /* text-align: center; */
+       width: 100%; 
+       padding: auto;
+       
+    }
+    
+    
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active,
+    .faq-page:hover {
+        background-color: #F9F9F9;
+    }
+    
+    /* Style the faq-page panel. Note: hidden by default */
+    .faq-body {
+        padding: 0 18px;
+        background-color: white;
+        display: none;
+        overflow: hidden;
+    }
+    
+    .faq-page:after {
+        content: '\02795';
+        /* Unicode character for "plus" sign (+) */
+        font-size: 13px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+    }
+    
+    .active:after {
+        content: "\2796";
+        /* Unicode character for "minus" sign (-) */
+    }
+    </style>
+    <script>
+    
+    var faq = document.getElementsByClassName("faq-page");
+    var i;
+    
+    for (i = 0; i < faq.length; i++) {
+        faq[i].addEventListener("click", function () {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+    
+            /* Toggle between hiding and showing the active panel */
+            var body = this.nextElementSibling;
+            if (body.style.display === "block") {
+                body.style.display = "none";
+            } else {
+                body.style.display = "block";
+            }
+        });
+    }
+    </script>
+          <!---
           <h3 class="title">Let's talk about a project</h3>
           <p class="text">
             Contact us now and get a 30% discount on your new project
           </p>
           <a href="#contact" class="btn">Hire us</a>
+        -->
         </div>
       </section>
     </main>
@@ -1039,9 +1387,97 @@ s0.parentNode.insertBefore(s1,s0);
           </div>
         </div>
       </div>
+
+      <section id="WhatsApp">
+        <div class="popup-container" id="popup-container">
+          <div class="popup-content">
+            <h3 style="color: brown;">Hi!</h3>
+           
+            <br>
+            <a href="https://wa.me/254792761073?text=Hello%20there,%20I'm%20interested%20in%20your%20services.%20Can%20you%20provide%20more%20information%3F" target="_blank">
+            
+            
+            
+              <i class="fab fa-whatsapp"></i> 
+            </a> 
+          
+          </div>
+        </div>
+      </div>
+      </section>
+      
+<style>
+
+#WhatsApp {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 9999;
+}
+/*
+.popup-container {
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}*/
+
+.popup-content {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.popup-content a {
+  display: block;
+  margin-bottom: 10px;
+  color: #333333;
+  text-decoration: none;
+}
+
+.popup-content i {
+  font-size: 24px;
+  margin-right: 5px;
+}
+.popup-content i {
+  font-size: 52px; /* Increased icon size */
+  margin-right: 10px; /* Increased margin for better spacing */
+}
+
+.popup-content i.fa-whatsapp {
+  color: #25D366; /* Set WhatsApp icon color */
+}
+
+.popup-content i.fa-facebook {
+  color: #3b5998; /* Set Facebook icon color */
+}
+.creative-icon {
+  /* Example styles */
+  animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+</style>
+
+    
     </footer>
 
-
+    <script>
+      // Select all the icons within the popup-content
+      const icons = document.querySelectorAll('.popup-content i');
+    
+      // Add a class to each icon for creative effects
+      icons.forEach((icon) => {
+        icon.classList.add('creative-icon');
+      });
+    </script>
 
 
 
